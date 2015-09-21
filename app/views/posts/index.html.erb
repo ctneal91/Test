@@ -1,11 +1,16 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Blogs on Blogs on Blogs </h1>
 
-<%= link_to new_posts_path do %>
-  Add New Post
-<% end %>
+<div class="button">
+  <%= link_to new_posts_path do %>
+    Add New Post
+  <% end %>
+</div>
+
 
 <% @posts.each do |post| %>
-  <p><%= post.title %></p>
-  <p><%= post.body %></p>
+
+  <div class="post">
+    <h2><%= post.title %></h2>
+    <p><%= post.body %></p>
+  </div>
 <% end %>
