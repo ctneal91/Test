@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Hello = Post.new
-Hello.title = "Hello World"
-Hello.body = "blah blah blah blah blah"
+hello = Post.new
+hello.title = "Hello World"
+hello.body = "blah blah blah blah blah"
 
-Hello.save
+hello.save

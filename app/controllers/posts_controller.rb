@@ -6,13 +6,14 @@ class PostsController < ApplicationController
   def show
     @post = Post.find params[:id]
   end
+
   def new
     @post = Post.new
   end
 
   def create
-    @post = Post.new params.require(:post).permit(:body, :text)
-    if post.save
+    @post = Post.new params.require(:post).permit(:title, :body)
+    if @post.save
       redirect_to root_path
     else
       render :new
